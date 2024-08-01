@@ -1,0 +1,1 @@
+document.getElementById('text').innerHTML = "物件選取"
