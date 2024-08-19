@@ -1,0 +1,27 @@
+.nav {
+    width: 300px;
+    height: 90px;
+    background-color: #7030de; 
+    margin-bottom: 10px;
+ }
+ #master {
+     width: 200px;
+    height: 90px;
+    background-color: #b7ff00; 
+    margin-bottom: 10px;
+ }
+ #slave {
+     width: 200px;
+     height: 90px;
+     background-color: #1500ff;
+ }
+ .img_01 {
+     width: 300px;
+ }
+ .border {
+     border: 10px solid #b7ff00;
+ }
+ .box .spec h3 {
+    font-size: 40px;
+    color : #ffcc00;
+ }
