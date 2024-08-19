@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
             padding: 0;
             margin: 0;
         }
-       .box {
+
+        /* .box {
           width: 100px;
           height: 100px;
           background-color: #333;
@@ -20,12 +22,48 @@
        }
        .right {
         float: right;
-       }
+       } */
+
+        .boxleft {
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            color: #fff;
+            /* display:inline-block ; */
+            float: left;
+        }
+
+        .boxright {
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            color: #fff;
+            /* display:inline-block ; */
+            float: left;
+        }
+        .clear {
+            /* 清除浮動 */
+            clear: both;
+        }
+        .box {
+          width: 200px;
+          height: 200px;
+          background-color: #f90000;
+
+        }
     </style>
 </head>
+
 <body>
-    <div class="box left">A</div>
-    <div class="box right">B</div>
-    
+    <!-- <div class="box left">A</div>
+    <div class="box right">B</div> -->
+    <div class="wrapper">
+        <div class="boxleft">A</div>
+        <div class="boxright">B</div>
+        <!-- 只要是有float2. 都要清除浮動 -->
+        <div class="clear"></div>
+    </div>
+    <div class="box"></div>
 </body>
+
 </html>
