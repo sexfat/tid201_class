@@ -62,16 +62,19 @@
         .section1 {
             /* 父層 */
             width: 100%;
-            min-height: 500px;
-
+            height: 500px;
             background-color: #08ff9c;
-            /* border: 1px solid #fff; */
+            /* 解決父層的magrin-top三種方法 */
+            /* border: 1px solid #ffffff00; */
             /* overflow: hidden; */
+            /* padding-top: 100px; */
         }
 
         .margintop {
             /* 子層 */
-            margin-top: 100px;
+            /* margin-top: 100px; */
+            /* margin-left: 50px  */
+            /* 左右不會受影響 */
             width: 100%;
             height: 300px;
             background-color: #ff992d;
