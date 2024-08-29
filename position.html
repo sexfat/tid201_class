@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px;
+        }
+
+        .box-a {
+            width: 140px;
+            height: 160px;
+            background-color: #c1c1c1;
+            position: absolute;
+            /* position: relative; */
+            /* left: 30px;
+            top: 50px; */
+            z-index: 2;
+        }
+
+        .box-b {
+            width: 140px;
+            height: 160px;
+            background-color: #c63403;
+            position: absolute;
+
+        }
+
+        .container {
+            width: 500px;
+            height: 300px;
+            border: 1px dotted #424242;
+            position: relative;
+            margin: auto;
+            background-color: #a1ffcc;
+            /* left: 240px; */
+        }
+        .box-c {
+            width: 140px;
+            height: 160px;
+            background-color: #c1c1c1;
+            position: absolute;
+            left: 40px;
+            top: 50px;
+            z-index: 2;
+        }
+        .box-d {
+            width: 140px;
+            height: 160px;
+            background-color: #c63403;
+            position: absolute;
+            left: 100px;
+            right:  50px;
+            z-index: 1;
+        }
+        .sticky {
+            height: 200px;
+            background-color: #0099ff;
+            position: sticky;
+            top: 70px;
+        }
+        /* h1 {
+          position: relative;
+          top: 80px;
+          left: 80px;
+          z-index: 3;
+
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box-a">a</div>
+    <div class="box-b">b</div>
+    <!-- <h1>看得文字嗎</h1> -->
+    <div class="container">
+        <div class="box-c">c</div>
+        <div class="box-d">d</div>
+    </div>
+
+    <div class="sticky">sticky</div>
+</body>
+
+</html>
