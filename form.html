@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <style>
+        .wrapper {
+                 min-height: 1200px;
+
+        }
          label {
                display: block;
                font-size: 12px;
@@ -16,6 +20,12 @@
              padding: 10px 8px;
              border-radius: 5px;
              min-width: 300px;
+         }
+         select {
+             border: 1px solid #a2a2a2; 
+             padding: 10px 8px;
+             border-radius: 4px;
+             width: 300px;
          }
 
      </style>
@@ -46,6 +56,30 @@
         <br>
         <label for="">數量</label>
         <input type="number" placeholder="數量">
+
+        <label for="">職業</label>
+        <input type="checkbox">工程師
+        <input type="checkbox">設計師
+
+        <input type="radio" name="sex">男
+        <input type="radio" name="sex">女
+
+        <br>
+        <textarea name="" id="">多欄文字</textarea>
+        <input type="range">
+
+        <h3>下拉式選單</h3>
+        <select name="city" id="">
+            <option value="taipei">台北市</option>
+            <option value="new taipei city">新北市</option>
+            <option value="new taipei city">宜蘭</option>
+            <option value="new taipei city">花蓮</option>
+            <option value="new taipei city">台東</option>
+            <option value="new taipei city">屏東</option>
+        </select>
+
+
+
     </form>
     
   
