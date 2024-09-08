@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>選擇器</title>
     <style>
+        body {
+           min-height: 2000px;
+
+        }
         * {
             box-sizing: border-box;
         }
@@ -68,6 +72,18 @@
         h1 , h2 , h3 ,h4 , h5, p {
            font-family: Arial, Helvetica, sans-serif;
         }
+        h4 {
+            font-size: 40px;
+            color: #333;
+        }
+        h4 p {
+           font-size: 20px;
+           color: #999
+        }
+        .section > p {
+            color : #00ffbf;
+            font-size: 30px;
+        }
     </style>
 </head>
 
@@ -89,6 +105,17 @@
         <img src="./images/a.jpeg" alt="">
         <a href="" title="this is flower">flower</a>
         <a href="" title="this is pen">pen</a>
+        <h3>組合選擇器</h3>
+        <h4>標題
+            <p>slogan</p>
+        </h4>
+        <div class="section">
+            <p>
+                p標籤 
+                <p>p標籤 inner</p>
+            </p>
+
+        </div> 
 
     </div>
 
