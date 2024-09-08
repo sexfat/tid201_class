@@ -26,11 +26,24 @@
            width: 900px;
            margin: auto;
         }
+        .first tr td:first-child {
+            background-color: #03b891;
+            color: #fff;
+        }
+        .second tr:nth-child(odd) {
+            background-color: #03b891;
+            color: #fff;
+        }
+        .second tr:nth-child(even) {
+            background-color: #00ff59;
+            color: #fff;
+        }
+       
     </style>
 </head>
 
 <body>
-    <table>
+    <table class="first">
         <tr>
             <td>001</td>
             <td>002</td>
@@ -42,7 +55,7 @@
     </table>
 
     <h3>合併儲存格</h3>
-    <table>
+    <table class="second">
         <tr>
             <td>001</td>
             <td>002</td>
@@ -52,6 +65,11 @@
             <td>004</td>
             <td>005</td>
             <td>006</td>
+        </tr>
+        <tr>
+            <td>007</td>
+            <td>008</td>
+            <td>009</td>
         </tr>
 
     </table>
@@ -98,7 +116,7 @@
 
     <h3>重大訊息</h3>
     <div class="w600">
-    <table>
+    <table class="information">
         <tr>
             <td>序號</td>
             <td></td>
