@@ -80,9 +80,33 @@
            font-size: 20px;
            color: #999
         }
+
         .section > p {
             color : #00ffbf;
             font-size: 30px;
+        }
+        .h1 + p {
+           font-size: 40px;
+
+        }
+        a {
+            color : #ff00ee 
+        }
+        a:hover {
+             color : #740059   
+        }
+        .btn {
+            padding:10px 20px;
+            text-align: center;
+            color : #fff;
+            background-color: #00a6ff;
+            width: 150px;
+            border-radius: 7px;
+            /* 滑鼠游標 */
+            cursor:pointer;
+        }
+        .btn:hover {
+            background-color: #005ca8;
         }
     </style>
 </head>
@@ -112,11 +136,14 @@
         <div class="section">
             <p>
                 p標籤 
-                <p>p標籤 inner</p>
+                <div> <p>p標籤 inner</p></div>
             </p>
-
         </div> 
-
+        <h1 class="h1">h1標題</h1>
+        <p>001</p>
+        <p>002</p>
+        <a href="#">link 連結</a>
+        <div class="btn">加入會員</div>
     </div>
 
 </body>
