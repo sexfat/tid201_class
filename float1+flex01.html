@@ -10,6 +10,7 @@
             width: 1070px;
             margin: auto;
         }
+
         .img {
             width: 170px;
             height: 128px;
@@ -50,6 +51,20 @@
         .clear {
             clear: both;
         }
+
+        /* flex寫法 */
+        .wrapper-flex {
+            display: flex;
+            width: 1070px;
+            justify-content: space-between;
+        }
+        .col {
+            display: flex;
+        }
+        .text {
+            width: 270px;
+            margin-left: 28px;
+        }
     </style>
     <title>class1</title>
 </head>
@@ -79,6 +94,26 @@
 
         </div>
         <div class="clear"></div>
+        <br>
+        <h2>以下flex寫法</h2>
+        <div class="wrapper-flex">
+            <div class="col">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>Quality</h3>
+                    <p>Quidam officiis similique sea ei, vel tollit indoctum efficiendi nihil tantas platonem eos. </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>Helpful</h3>
+                    <p>Quidam officiis similique sea ei, vel tollit indoctum efficiendi nihil tantas platonem eos. </p>
+                </div>
+            </div>
+
+
+        </div>
     </div>
 
 </body>
