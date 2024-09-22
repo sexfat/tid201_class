@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-shrink 範例</title>
+    <style>
+        * {
+         box-sizing: border-box;
+
+        }
+        /* Flex 容器樣式 */
+        .container {
+            display: flex;
+            border: 2px solid black;
+            width: 500px; /* 固定容器寬度 */
+            height: 150px;
+            background-color: #f0f0f0;
+        }
+
+        /* 通用項目樣式 */
+        .item {
+            background-color: lightblue;
+            border: 1px solid navy;
+            padding: 20px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        /* 項目寬度設置，超出容器寬度 */
+        .item-1 {
+            flex-shrink: 1; /* 正常縮減 */
+            width: 200px;
+        }
+
+        .item-2 {
+            flex-shrink: 2; /* 更強的縮減效果 */
+            width: 200px;
+        }
+
+        .item-3 {
+            flex-shrink: 0; /* 不縮減 */
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>使用 flex-shrink 屬性</h2>
+<div class="container">
+    <div class="item item-1">項目 1 (flex-shrink: 1)</div>
+    <div class="item item-2">項目 2 (flex-shrink: 2)</div>
+    <div class="item item-3">項目 3 (flex-shrink: 0)</div>
+</div>
+
+</body>
+</html>
+

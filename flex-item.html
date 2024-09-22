@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 屬性範例</title>
+    <style>
+        /* Flex 容器樣式 */
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            border: 2px solid black;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* 項目通用樣式 */
+        .item {
+            background-color: lightblue;
+            border: 1px solid navy;
+            padding: 10px;
+            color: navy;
+            margin: 5px;
+        }
+
+        /* 不同的 flex 設定 */
+        .item-1 {
+            flex: 1;
+        }
+        .item-2 {
+            flex: 2;
+        }
+         .item-3{
+          flex:1 1 150px;
+
+         }
+    </style>
+</head>
+<body>
+
+<h2>使用 flex 屬性</h2>
+<div class="container">
+    <div class="item item-1">項目 1 (flex: 1)</div>
+    <div class="item item-2">項目 2 (flex: 2)</div>
+    <div class="item item-3">項目 3 (flex: 1 1 150px)</div>
+</div>
+</body>
+</html>
+
