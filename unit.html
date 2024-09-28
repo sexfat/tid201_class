@@ -10,9 +10,10 @@
             /* 單位像素 */
             font-size: 16px;
         }
+
         p {
-           margin: 0;
-           padding: 0; 
+            margin: 0;
+            padding: 0;
         }
 
         .box {
@@ -20,22 +21,31 @@
             height: 100px;
             background-color: #0037ff;
         }
+
         .section {
-            /* 1em 預設值 */
+            /* 這個容器 1em 參考預設值 */
             font-size: 20px;
         }
 
         p.em {
             font-size: 2em;
         }
+
         .spacing-1 {
-           height: 1em;
-        }
-        .spacing-2 {
-           height: 2em;
+            height: 1em;
         }
 
-   
+        .spacing-2 {
+            height: 2em;
+        }
+        .rem {
+            /*em 參考預設值  */
+           font-size: 20px; 
+        }
+        .rem h1 {
+            /* 參考根目錄底下的html標籤 字體大小 */
+         font-size: 4rem;
+        }
     </style>
 </head>
 
@@ -48,9 +58,7 @@
         </p>
     </div>
     <section class="rem">
-    <h1>這是rem標題大小</h1>     
-
-
+        <h1>這是rem標題大小</h1>
     </section>
 
 
