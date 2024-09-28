@@ -110,6 +110,20 @@
             background-color: #00a2ff;
             color: #fff;
         }
+
+        .box {
+           width: 300px;
+           height: 400px;
+           background-color: #0beefe;
+           color:#fff;
+           display: none;
+        }
+
+        .hover:hover .box {
+         
+          display: block;
+        }
+
     </style>
 </head>
 
@@ -121,10 +135,14 @@
         <div class="item item-2">項目 2 (align-self: center)</div>
         <div class="item item-3">項目 3 (align-self: stretch)</div>
     </div>
-    <div class="btn btn-default">預設按鈕</div>
+    <div class="hover">
+        <div class="btn btn-default">預設按鈕</div>
+        <div class="box">看不見我</div>
+    </div>
+   
     <div class="btn btn-success round">完成按鈕</div>
     <div class="btn btn-error round50">錯誤按鈕</div>
-
+   
 
     <div class="section">
         <div class="card-box">
@@ -147,7 +165,7 @@
         </div>
     </div>
 
-
+  
 
 
 
