@@ -9,6 +9,8 @@
         body {
             /* 單位像素 */
             font-size: 16px;
+            margin: 0;
+            padding: 0;
         }
 
         p {
@@ -38,18 +40,37 @@
         .spacing-2 {
             height: 2em;
         }
+
         .rem {
             /*em 參考預設值  */
-           font-size: 20px; 
+            font-size: 20px;
         }
+
         .rem h1 {
             /* 參考根目錄底下的html標籤 字體大小 */
-         font-size: 4rem;
+            font-size: 4rem;
+        }
+
+        /* ========== 依照 % 去算寬度 ======== */
+        .w100 {
+            width: 100%;
+            background-color: #f6ff7b;
+            height: 300px;
+            margin: auto;
+        }
+
+        .w50 {
+            width: 100%;
+            max-width: 1200px;
+            height: 200px;
+            background-color: #c5ff83;
+            margin: auto;
         }
     </style>
 </head>
 
 <body>
+    <h1>em / rem 依照字體大小去設定值</h1>
     <div class="section">
         <div class="box"></div>
         <div class="spacing-1"></div>
@@ -60,6 +81,19 @@
     <section class="rem">
         <h1>這是rem標題大小</h1>
     </section>
+    <div class="w100">
+        跟螢幕滿版一樣大
+        <div class="w50">
+            - **`px`**：用於固定的尺寸控制。
+            - **`em` 和 `rem`**：用於字體和元素的相對大小設置，特別適合動態調整和響應式設計。
+            - **`%`、`vw`、`vh`**：用於根據父元素或視窗大小的相對調整，讓佈局隨螢幕變化。
+            - **`vmin` 和 `vmax`**：更靈活地控制基於螢幕大小的尺寸，適合需要根據螢幕大小動態改變的元素。
+
+            這些單位的靈活運用能夠讓你的設計更加響應式和易於調整，適應不同的裝置和螢幕尺寸。
+        </div>
+
+
+    </div>
 
 
 
