@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片範例</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+           width: 100%;
+           height: auto; 
+        }
+
+        .full {
+            width: 100%;
+            height: 623px;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .full .w50 {
+            flex: 0 0 50%;
+            background-color: #101010;
+            color: #fff;
+        }
+
+        .full .w50 .spec {
+            width: 80%;
+            min-height: 250px; 
+            background-color: #acff26;
+        }
+        .full .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .full .bg {
+            background-color: #d0d0d0;
+            background-image: url('./images/2673396.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+/* =====================固定寬======================================= */
+        .fixed {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            gap: 5px;
+        }
+        .fixed .img {
+            flex: 0 0 25%;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>參考範例</h3>
+    <a target="_blank"
+        href="https://preview.themeforest.net/item/ruko-creative-agency-showcase-portfolio/full_screen_preview/33200679?_ga=2.238196873.843189677.1727450384-855231248.1613180785">參考範例</a>
+    <div class="full">
+        <div class="w50 text">
+            <div class="spec">
+                <h1>這裡是標題</h1>
+                <p>這裡內文 這些單位的靈活運用能夠讓你的設計更加響應式和易於調整，適應不同的裝置和螢幕尺寸。</p>
+            </div>
+        </div>
+        <div class="w50 bg"></div>
+    </div>
+    <div class="fixed">
+        <div class="img"><img src="./images/1.jpg" alt=""></div>
+        <div class="img"><img src="./images/2.jpg" alt=""></div>
+        <div class="img"><img src="./images/1.jpg" alt=""></div>
+        <div class="img"><img src="./images/2.jpg" alt=""></div>
+    </div>
+
+
+
+
+</body>
+
+</html>
