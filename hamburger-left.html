@@ -86,12 +86,24 @@
             z-index: 1000;
             transition: all .3s ease;
         }
-        .side_menu.active {
-            left : 0
 
-        } 
+        .side_menu.active {
+            left: 0
+        }
 
         .side_menu .navlist {
+            display: none;
+        }
+        .overlay {
+         position:fixed;
+         width: 100vw;
+         height: 100vh;
+         background-color: #5454548c;
+         z-index: 2;
+         top: 0;
+         left: 0;
+        }
+        .overlay.active {
             display: none;
         }
 
@@ -104,16 +116,16 @@
             nav .navlist {
                 display: none;
             }
-            .side_menu .navlist {
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-        }
-        .side_menu .navlist li {
-            
-            margin: 20px 0;
 
-        }
+            .side_menu .navlist {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .side_menu .navlist li {
+                margin: 20px 0;
+            }
         }
     </style>
 </head>
@@ -140,19 +152,27 @@
                 <li>contact</li>
             </ul>
         </div>
+        <div class="overlay"></div>
+
     </nav>
-
-
+  
 
 
 
     <script>
         const hamburger = document.querySelector('.hamburger');
         const sidemenu = document.querySelector('.side_menu');
+        const overlay = document.querySelector('.overlay');
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             sidemenu.classList.toggle('active');
+        });
+        
+        overlay.addEventListener('click', ()=>{
+            overlay.classList.remove('active');
+            sidemenu.classList.remove('active');
         })
+
 
     </script>
 </body>
