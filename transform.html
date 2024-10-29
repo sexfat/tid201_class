@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transform 型變位移屬性</title>
+    <style>
+     .box {
+         width: 200px;
+         height: 200px;
+         background-color: #ff2c2c;
+         position: relative;
+         /* left: 200px; */
+         padding: 20px;
+     }
+     .translate {
+        position: relative;
+        top: 200px;
+        left: 100px;
+        transform: translate(100px , 200px);
+     }
+     .rotate {
+        transform: rotate(45deg);
+        background-color: #ffdf0d;
+     } 
+     .scale {
+        transform: scale(2);
+        background-color: #00ff55;
+     }
+     .multi {
+        transform: translateX(100px) rotate(30deg) scale(2);
+        background-color: #ff00dd;
+
+     }
+
+
+    </style>
 </head>
 <body>
+    <div class="box translate">translate</div>
+    <!-- <div class="box rotate">rotate</div>
+    <div class="box scale">scale 2x</div>
+    <div class="box multi">組合寫法</div> -->
+
+
+
+
 
     
 </body>
