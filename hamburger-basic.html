@@ -80,9 +80,14 @@
               top: 80px;
               left: 0;
               background-color: #393939;
-              display: flex;
+              display: none;
+              /* 手機選單要消失 */
               justify-content: center;
               align-items: center;
+           }
+           nav .navlist.active {
+            display: flex;
+            /* 按下去之後選單要出現 */
            }
            nav .navlist li {
               margin: 20px;
@@ -111,8 +116,10 @@
 
     <script>
         const hamburger = document.querySelector('.hamburger');
+        const navlist = document.querySelector('.navlist');
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
+            navlist.classList.toggle('active');
         })
 
     </script>
