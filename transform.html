@@ -14,9 +14,9 @@
          padding: 20px;
      }
      .translate {
-        position: relative;
+        /* position: relative;
         top: 200px;
-        left: 100px;
+        left: 100px; */
         transform: translate(100px , 200px);
      }
      .rotate {
@@ -32,15 +32,26 @@
         background-color: #ff00dd;
 
      }
+     .rect {
+       width: 300px;
+       height: 50px;
+       background-color: #242323;
+       transform: rotate(0deg);
+       /* 屬性控制旋轉中心點 */
+       transform-origin: center bottom;
+     }
+
 
 
     </style>
 </head>
 <body>
+    
     <div class="box translate">translate</div>
-    <!-- <div class="box rotate">rotate</div>
+    <div class="box rotate">rotate</div>
     <div class="box scale">scale 2x</div>
-    <div class="box multi">組合寫法</div> -->
+    <div class="box multi">組合寫法</div>
+    <div class="rect">旋轉</div>
 
 
 
