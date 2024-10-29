@@ -74,15 +74,25 @@
         .hamburger.active span:nth-child(3) {
             transform: rotate(-45deg);
         }
+
         .side_menu {
-           position: fixed;
-           width: 250px;
-           top: 0;
-           left: 0px;
-           height: 100%;
-           background-color: #2e2e2e;
-           color: #fff;
-           z-index: 1000;
+            position: fixed;
+            width: 250px;
+            top: 0;
+            left: -250px;
+            height: 100%;
+            background-color: #2e2e2e;
+            color: #fff;
+            z-index: 1000;
+            transition: all .3s ease;
+        }
+        .side_menu.active {
+            left : 0
+
+        } 
+
+        .side_menu .navlist {
+            display: none;
         }
 
         /* 手機斷點 */
@@ -90,10 +100,20 @@
             .hamburger {
                 display: flex;
             }
+
             nav .navlist {
                 display: none;
-
             }
+            .side_menu .navlist {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+        }
+        .side_menu .navlist li {
+            
+            margin: 20px 0;
+
+        }
         }
     </style>
 </head>
@@ -127,7 +147,12 @@
 
 
     <script>
-
+        const hamburger = document.querySelector('.hamburger');
+        const sidemenu = document.querySelector('.side_menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidemenu.classList.toggle('active');
+        })
 
     </script>
 </body>
