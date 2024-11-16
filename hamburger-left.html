@@ -94,18 +94,8 @@
         .side_menu .navlist {
             display: none;
         }
-        .overlay {
-         position:fixed;
-         width: 100vw;
-         height: 100vh;
-         background-color: #5454548c;
-         z-index: 2;
-         top: 0;
-         left: 0;
-        }
-        .overlay.active {
-            display: none;
-        }
+
+
 
         /* 手機斷點 */
         @media screen and (max-width:768px) {
@@ -125,6 +115,16 @@
 
             .side_menu .navlist li {
                 margin: 20px 0;
+            }
+
+            .overlay {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                background-color: #5454548c;
+                z-index: 2;
+                top: 0;
+                left: 0;
             }
         }
     </style>
@@ -155,7 +155,7 @@
         <div class="overlay"></div>
 
     </nav>
-  
+
 
 
 
@@ -167,8 +167,8 @@
             hamburger.classList.toggle('active');
             sidemenu.classList.toggle('active');
         });
-        
-        overlay.addEventListener('click', ()=>{
+
+        overlay.addEventListener('click', () => {
             overlay.classList.remove('active');
             sidemenu.classList.remove('active');
         })
